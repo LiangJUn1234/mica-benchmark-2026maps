@@ -1,0 +1,4 @@
+config/paths.sh
+work/
+__pycache__/
+*.pyc

@@ -1,0 +1,14 @@
+name: mica-benchmark
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pip
+  - pip:
+      - pandas==2.3.3
+      - numpy==2.4.6
+      - scipy==1.16.3
+      - statsmodels==0.15.0
+      - gemmi==0.7.5
+      - mrcfile==1.5.4
+      - requests==2.34.2
