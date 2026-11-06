@@ -3,7 +3,11 @@
 Code for the benchmark in the accompanying report. Test dataset on Zenodo: [DOI to be added].
 
 <table>
-<tr><th>In the report</th><th>Code (click to see what each file does)</th></tr>
+<tr><th>In the report</th><th>
+
+Code $\color{red}{\text{(click to see what each file does)}}$
+
+</th></tr>
 <tr><td>Test-set selection (Methods, Fig. 1a)</td><td><details><summary>dataset/ (7 files)</summary>
 <a href="dataset/query_candidates.py">query_candidates.py</a>: 2026 cryo-EM PDB entries at ≤ 6 Å from RCSB and EMDB, with the reason each excluded entry fails.<br>
 <a href="dataset/extract_sequences.py">extract_sequences.py</a>: Protein sequences of a list of PDB entries, used for the training-set FASTA.<br>
