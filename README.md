@@ -1,6 +1,6 @@
 # MICA benchmark on 2026 cryo-EM maps
 
-Code for the benchmark in the accompanying report. Test dataset on Zenodo: [DOI to be added].
+Code for the benchmark in the accompanying report. 
 
 <table>
 <tr><th>In the report</th><th>
