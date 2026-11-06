@@ -15,14 +15,14 @@ Code for the benchmark in the accompanying report. Test dataset on Zenodo: [DOI 
 </details></td></tr>
 <tr><td>AF3 models given to the methods (Table 1, note a)</td><td><details><summary>af3_json.py, run_af3.sh</summary>
 <a href="inputs/af3_json.py">af3_json.py</a>: AF3 inputs (one per unique sequence), the template-date check, and placement of AF3 models for the methods.<br>
-<a href="inputs/run_af3.sh">run_af3.sh</a>: AlphaFold3 3.0.1.
+<a href="inputs/run_af3.sh">run_af3.sh</a>: AlphaFold3 3.0.1: data pipeline, then inference.
 </details></td></tr>
 <tr><td>Header normalization; ModelAngelo padding (Procedure)</td><td><details><summary>normalize_header.py, modelangelo_pad_offset.py, modelangelo_apply_offset.py</summary>
 <a href="inputs/normalize_header.py">normalize_header.py</a>: Rewrites non-standard map headers and records the shift for the reference.<br>
 <a href="methods/modelangelo_pad_offset.py">modelangelo_pad_offset.py</a>: ModelAngelo's padding offset of a map.<br>
 <a href="methods/modelangelo_apply_offset.py">modelangelo_apply_offset.py</a>: Moves a ModelAngelo model back by that offset.
 </details></td></tr>
-<tr><td>Running each method and the AF3-docked baseline (Procedure, Table 1)</td><td><details><summary>methods/ (16 files) and the CryoZeta MSAs</summary>
+<tr><td>Running each method and the AF3-docked baseline (Procedure, Table 1)</td><td><details><summary>method runners, environments, versions</summary>
 In brackets: the folder that holds each method's results.<br>
 <a href="methods/mica_dock.sh">mica_dock.sh</a>: MICA step 1: docks the AF3 models into the map; the docked model is the AF3-docked baseline (af3d).<br>
 <a href="methods/mica_build.sh">mica_build.sh</a>: MICA step 2: model building on the docked entry (mica).<br>
@@ -58,7 +58,7 @@ In brackets: the folder that holds each method's results.<br>
 <a href="analysis/cryoace_compare.py">cryoace_compare.py</a>: CryoACE against MICA, CryoZeta and EModelX(+AF) on its 22 maps.
 </details></td></tr>
 <tr><td>Medians, training-similar means, results by number of copies, partial copies, numbers in the figure captions (Results, Fig. 1–4, Discussion)</td><td><details><summary>report_numbers.py</summary>
-<a href="analysis/report_numbers.py">report_numbers.py</a>: The other numbers in the report: medians, results by number of copies, partial copies, Fig. 4c, the EMD-56389 rerun.
+<a href="analysis/report_numbers.py">report_numbers.py</a>: The other numbers in the report: medians, training-similar means, results by number of copies, partial copies, numbers in the figure captions, the EMD-56389 rerun.
 </details></td></tr>
 <tr><td>EMD-56389 with every copy given to AF3 (Results, Fig. 5)</td><td><details><summary>af3_all_copies.py</summary>
 <a href="inputs/af3_all_copies.py">af3_all_copies.py</a>: AF3 input with every copy of a chain, for the EMD-56389 rerun (MICA's own script writes AlphaFold Server JSON, which the local AF3 3.0.1 does not read).<br>
